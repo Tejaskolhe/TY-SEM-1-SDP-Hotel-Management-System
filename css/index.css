@@ -1,0 +1,28 @@
+
+hr.solid {
+    border-top: 2px solid #000000;
+    width: 40%;
+}
+.jumbotron {
+    width: 100%;
+    background-color: #F2F3F4;
+    margin-bottom: 30px;
+    
+}
+.jumbotron img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+    
+}
+h2.seperator{
+    text-align: center;
+    margin: 10px;
+}
+img.logo {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    
+}

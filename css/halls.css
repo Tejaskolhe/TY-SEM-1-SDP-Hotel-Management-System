@@ -1,0 +1,43 @@
+.jumbotron {
+    background-color: #F2F3F4;
+    margin-bottom: 30px;
+    
+}
+.jumbotron img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+}
+.vl {
+    border-left: 1px solid #000000;
+  height: 15px;
+  margin-top: 14px;
+}
+.mid {
+    color: #000000;
+}
+.wed {
+    text-align: center;
+    margin-top: 30px;
+}
+.card-title {
+    margin-top: 20px;
+}
+.banner {
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+}
+.description {
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 10px;
+}
+.con {
+    text-align: center;
+}
+.meet {
+    margin-top: 20px;
+}
+
