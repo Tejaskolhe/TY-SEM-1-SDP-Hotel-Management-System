@@ -32,12 +32,6 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- logo
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">
-        <img class="logo" src="images/hot.jpg" width="40px" height="40px" alt="">
-      </a>
-    </nav> -->
         <a class="navbar-brand" href="index.html">THE AVENUE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,73 +47,54 @@
                     <a class="nav-link" href="#">BOOKINGS<span class="sr-only">(current)</span> </a>
                 </li>
 
-                <!-- <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            BOOKINGS<span class="sr-only">(current)</span>
-          </a> -->
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="trans.html">TRANSPORTATION</a>
-            <a class="dropdown-item" href="pool.html">SWIMMING POOL</a>
-            <a class="dropdown-item" href="TRY.html">GAME SLOTS</a>
-            <a class="dropdown-item" href="partyhal.html">PARTY HALL</a>
-            <a class="dropdown-item" href="wedding hall.html">WEDDING HALL</a>
-            <a class="dropdown-item" href="meetinghall.html">MEETING HALL</a>
-          </div> -->
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">GALLERY</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">CONTACT US</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        LOGIN
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="login.html">GUEST LOGIN</a>
-                        <a class="dropdown-item" href="login1.html">STAFF LOGIN</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="signup.html" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign
+                        Up</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
         </div>
     </nav>
     <div class="jumbotron">
         <div class="container">
-          <img src="images/logo.jpg" alt="">
-          <h3>THE AVENUE</h3>
-          <p>Address: <a href="https://www.google.com/maps/place/The+Avenue/@18.5367864,73.7642438,12z/data=!4m8!1m2!2m1!1sThe+Avenue,Pune!3m4!1s0x3bc2bf8018a5870f:
+            <img src="images/logo.jpg" alt="">
+            <h3>THE AVENUE</h3>
+            <p>Address: <a href="https://www.google.com/maps/place/The+Avenue/@18.5367864,73.7642438,12z/data=!4m8!1m2!2m1!1sThe+Avenue,Pune!3m4!1s0x3bc2bf8018a5870f:
         0x413d1cf4079b9e21!8m2!3d18.528033!4d73.841004">
-              <ion-icon name="location-sharp"></ion-icon>
-              1125, Squadron Leader Sureshchandra Bhagwat Rd, Model Colony, Shivajinagar, Pune,
-              Maharashtra 411016
-            </a></p>
-          <p>Call us at: <a href="tel:+919561191117">
-              <ion-icon name="call-sharp"></ion-icon>+919561191117
-            </a>
-          </p>
+                    <ion-icon name="location-sharp"></ion-icon>
+                    1125, Squadron Leader Sureshchandra Bhagwat Rd, Model Colony, Shivajinagar, Pune,
+                    Maharashtra 411016
+                </a></p>
+            <p>Call us at: <a href="tel:+919561191117">
+                    <ion-icon name="call-sharp"></ion-icon>+919561191117
+                </a>
+            </p>
         </div>
-      </div>
+    </div>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" href="bookings.html">ROOMS</a>
+            <a class="nav-link mid" href="bookings.html">ROOMS</a>
         </li>
         <span class="vl"></span>
         <li class="nav-item">
-            <a class="nav-link" href="suites.html">SUITES</a>
+            <a class="nav-link active mid" href="suites.html">SUITES</a>
         </li>
         <span class="vl"></span>
         <li class="nav-item">
-            <a class="nav-link" href="halls.html">HALLS</a>
+            <a class="nav-link mid" href="halls.html">HALLS</a>
         </li>
         <span class="vl"></span>
         <li class="nav-item">
-            <a class="nav-link" href="transport.html">TRANSPORTATION</a>
+            <a class="nav-link mid" href="transport.html">TRANSPORTATION</a>
         </li>
     </ul>
     <div class="container">
@@ -136,7 +111,7 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img src="images/suite.jpg" width="450" height="300">
+                    <img src="images/suite.jpg" width="100%">
                 </div>
             </div>
         </div>
@@ -173,7 +148,49 @@
                                 </ul>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-outline-primary">Check Availability</a>
+                        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#executive-suite">Check
+                            Availability</button>
+                        <div class="modal fade" id="executive-suite" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="start-date">Check-In Date</label>
+                                                <input type="date" class="form-control" id="start-date" placeholder=""
+                                                    required="">
+                                                <div class="invalid-feedback">
+                                                    Please enter valid Check-In Date.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="start-date">Check-Out Date</label>
+                                                <input type="date" class="form-control" id="start-date" placeholder=""
+                                                    required="">
+                                                <div class="invalid-feedback">
+                                                    Please enter valid Check-Out Date.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,7 +204,8 @@
                             Pampering amenities include complimentary fruit, mineral water and soft bathrobes and
                             slippers. This is a standard suite.</p>
                         <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
                                 Amenities
                             </a>
 
@@ -220,12 +238,31 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        <div class="form-group">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="start-date">Check-In Date</label>
+                                                <input type="date" class="form-control" id="start-date" placeholder=""
+                                                    required="">
+                                                <div class="invalid-feedback">
+                                                    Please enter valid Check-In Date.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="start-date">Check-Out Date</label>
+                                                <input type="date" class="form-control" id="start-date" placeholder=""
+                                                    required="">
+                                                <div class="invalid-feedback">
+                                                    Please enter valid Check-Out Date.
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-success">Book Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -244,7 +281,8 @@
                             comfort. This is a premium suite.
                         </p>
                         <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
                                 Amenities
                             </a>
 
@@ -264,7 +302,48 @@
                                 </ul>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-outline-primary">Check Availability</a>
+                        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#heaven-suite">Check
+                            Availability</button>
+                        <div class="modal fade" id="heaven-suite" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="start-date">Check-In Date</label>
+                                                <input type="date" class="form-control" id="start-date" placeholder=""
+                                                    required="">
+                                                <div class="invalid-feedback">
+                                                    Please enter valid Check-In Date.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="start-date">Check-Out Date</label>
+                                                <input type="date" class="form-control" id="start-date" placeholder=""
+                                                    required="">
+                                                <div class="invalid-feedback">
+                                                    Please enter valid Check-Out Date.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -272,18 +351,18 @@
     </div>
     <div class="container">
         <p class="float-right">
-              <a href="#">Back to top<ion-icon name="arrow-up-outline"></ion-icon></a>
+            <a href="#">Back to top<ion-icon name="arrow-up-outline"></ion-icon></a>
         </p>
         <footer class="my-5 pt-5 text-muted text-center text-small">
-              <div class="container">
-                    <ul class="list-inline">
-                          <li class="list-inline-item align-center"><a href="about.html">About</a></li>
-                          <li class="list-inline-item align-center"><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <p class="mb-1">© 2020 The Avenue</p>
-              </div>
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item align-center"><a href="about.html">About</a></li>
+                    <li class="list-inline-item align-center"><a href="contact.html">Contact</a></li>
+                </ul>
+                <p class="mb-1">© 2020 The Avenue</p>
+            </div>
         </footer>
-  </div>
+    </div>
 </body>
 
 </html>

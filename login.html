@@ -1,18 +1,98 @@
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="login.css">
-<title>
-AVENUE:login
-</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--Internal Styling-->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <title>Login - The Avenue user</title>
 </head>
+
 <body>
-<ul>
-<li><a><a href="hms.html">HOME</a></a></li>
-</ul>
-<div class="loginbox">
-<img src="log.png" class="log">
-<h1>AVENUE : GUEST LOGIN</h1>
-<form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">THE AVENUE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bookings.html">BOOKINGS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="signup.html" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign
+                        Up</a>
+                </li>
+            </ul>
+
+    </nav>
+    <div class="container">
+        <img class="mb-4" src="images/logo.jpg" alt="" width="15%" height="15%">
+    </div>
+    <div class="container">
+        <form class="form-signin">
+            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                autofocus="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <a href="signup.html"><u>Create account</u></a>
+        </form>
+    </div>
+
+    <div class="container">
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item align-center"><a href="about.html">About</a></li>
+                    <li class="list-inline-item align-center"><a href="contact.html">Contact</a></li>
+                </ul>
+                <p class="mb-1">© 2020 The Avenue</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+
+<!-- <form>
 <p>USERNAME / ID</p>
 <input type="text" id="username" value="G" name="username" placeholder="enter your username">
 <p>PASSWORD</p>
@@ -75,4 +155,4 @@ alert("wrong id/password");
 
 }
 </script>
-</body>
+</body> --> -->

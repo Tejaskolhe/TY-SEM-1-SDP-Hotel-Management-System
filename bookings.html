@@ -32,12 +32,6 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <!-- logo
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">
-        <img class="logo" src="images/hot.jpg" width="40px" height="40px" alt="">
-      </a>
-    </nav> -->
     <a class="navbar-brand" href="index.html">THE AVENUE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,20 +46,6 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">BOOKINGS<span class="sr-only">(current)</span> </a>
         </li>
-
-        <!-- <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            BOOKINGS<span class="sr-only">(current)</span>
-          </a> -->
-        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="trans.html">TRANSPORTATION</a>
-            <a class="dropdown-item" href="pool.html">SWIMMING POOL</a>
-            <a class="dropdown-item" href="TRY.html">GAME SLOTS</a>
-            <a class="dropdown-item" href="partyhal.html">PARTY HALL</a>
-            <a class="dropdown-item" href="wedding hall.html">WEDDING HALL</a>
-            <a class="dropdown-item" href="meetinghall.html">MEETING HALL</a>
-          </div> -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="gallery.html">GALLERY</a>
@@ -73,21 +53,13 @@
         <li class="nav-item">
           <a class="nav-link" href="contact.html">CONTACT US</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            LOGIN
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="login.html">GUEST LOGIN</a>
-            <a class="dropdown-item" href="login1.html">STAFF LOGIN</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">LOGIN</a>
+        </li>
+        <li>
+          <a href="signup.html" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign Up</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
 
   </nav>
   <div class="jumbotron">
@@ -136,7 +108,7 @@
           </p>
         </div>
         <div class="col-md-5">
-          <img src="images/room.jpg" width="450" height="300">
+          <img src="images/room.jpg" width="100%">
         </div>
       </div>
     </div>
@@ -173,7 +145,46 @@
                 </ul>
               </div>
             </div>
-            <a href="#" class="btn btn-outline-primary">Check Availability</a>
+            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#deluxe-king">Check
+              Availability</button>
+            <div class="modal fade" id="deluxe-king" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Starting Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Last Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -205,7 +216,46 @@
                 </ul>
               </div>
             </div>
-            <a href="#" class="btn btn-outline-primary">Check Availability</a>
+            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#king-double">Check
+              Availability</button>
+            <div class="modal fade" id="king-double" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Starting Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Last Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,7 +290,46 @@
                 </ul>
               </div>
             </div>
-            <a href="#" class="btn btn-outline-primary">Check Availability</a>
+            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#king-single">Check
+              Availability</button>
+            <div class="modal fade" id="king-single" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Starting Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Last Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -272,7 +361,46 @@
                 </ul>
               </div>
             </div>
-            <a href="#" class="btn btn-outline-primary">Check Availability</a>
+            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#deluxe-twin">Check
+              Availability</button>
+            <div class="modal fade" id="deluxe-twin" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Starting Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Last Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -304,7 +432,45 @@
                 </ul>
               </div>
             </div>
-            <a href="#" class="btn btn-outline-primary">Check Availability</a>
+            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#pool-twin">Check
+              Availability</button>
+            <div class="modal fade" id="pool-twin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Starting Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-6 mb-3">
+                        <label for="start-date">Last Date</label>
+                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          Please enter valid Date.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -312,18 +478,18 @@
   </div>
   <div class="container">
     <p class="float-right">
-          <a href="#">Back to top<ion-icon name="arrow-up-outline"></ion-icon></a>
+      <a href="#">Back to top<ion-icon name="arrow-up-outline"></ion-icon></a>
     </p>
     <footer class="my-5 pt-5 text-muted text-center text-small">
-          <div class="container">
-                <ul class="list-inline">
-                      <li class="list-inline-item align-center"><a href="about.html">About</a></li>
-                      <li class="list-inline-item align-center"><a href="contact.html">Contact</a></li>
-                </ul>
-                <p class="mb-1">© 2020 The Avenue</p>
-          </div>
+      <div class="container">
+        <ul class="list-inline">
+          <li class="list-inline-item align-center"><a href="about.html">About</a></li>
+          <li class="list-inline-item align-center"><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="mb-1">© 2020 The Avenue</p>
+      </div>
     </footer>
-</div>
+  </div>
 </body>
 
 </html>

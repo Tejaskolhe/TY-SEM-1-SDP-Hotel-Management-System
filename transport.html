@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Internal stlying -->
+  <link rel="stylesheet" href="css/transport.css">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="form-validation.js"></script>
+  <!--ionicons-->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
+
+
+  <title>Bookings-The Avenue</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">THE AVENUE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">BOOKINGS<span class="sr-only">(current)</span> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">LOGIN</a>
+        </li>
+        <li>
+          <a href="signup.html" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign Up</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <div class="container">
+      <img src="images/logo.jpg" alt="">
+      <h3>THE AVENUE</h3>
+      <p>Address: <a href="https://www.google.com/maps/place/The+Avenue/@18.5367864,73.7642438,12z/data=!4m8!1m2!2m1!1sThe+Avenue,Pune!3m4!1s0x3bc2bf8018a5870f:
+        0x413d1cf4079b9e21!8m2!3d18.528033!4d73.841004">
+          <ion-icon name="location-sharp"></ion-icon>
+          1125, Squadron Leader Sureshchandra Bhagwat Rd, Model Colony, Shivajinagar, Pune,
+          Maharashtra 411016
+        </a></p>
+      <p>Call us at: <a href="tel:+919561191117">
+          <ion-icon name="call-sharp"></ion-icon>+919561191117
+        </a>
+      </p>
+    </div>
+  </div>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link mid" href="bookings.html">ROOMS</a>
+    </li>
+    <span class="vl"></span>
+    <li class="nav-item">
+      <a class="nav-link mid" href="suites.html">SUITES</a>
+    </li>
+    <span class="vl"></span>
+    <li class="nav-item">
+      <a class="nav-link mid" href="halls.html">HALLS</a>
+    </li>
+    <span class="vl"></span>
+    <li class="nav-item">
+      <a class="nav-link active mid" href="transport.html">TRANSPORTATION</a>
+    </li>
+  </ul>
+  <div class="container ">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>To avail this Service, you must have a prior booking with us.</strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container options">
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/ciaz.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Standard</h5>
+            <p class="card-text">Maruti Suzuki Ciaz or Similar </br>
+            <ul>
+              <li>5 Passengers</li>
+              <li>2 Big Luggage</li>
+              <li>3 Small Luggage</li>
+              <li>4 Door</li>
+              <li>Automatic Transmission</li>
+            </ul>
+            Rent:
+            <ul>
+              <li>&#x20b9; 1700/8 hrs or 80 kms</li>
+              <li>&#x20b9; 4000/day</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/swift.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Economy</h5>
+            <p class="card-text"> Swift Dzire or Similar </br>
+            <ul>
+              <li>5 Passengers</li>
+              <li>2 Big Luggage</li>
+              <li>3 Small Luggage</li>
+              <li>4 Door</li>
+              <li>Manual Transmission</li>
+            </ul>
+            Rent:
+            <ul>
+              <li>&#x20b9; 1800/8 hrs or 80 kms</li>
+              <li>&#x20b9; 4500/day</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/ford.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SUV</h5>
+            <p class="card-text">Ford Endeavour or Similar </br>
+            <ul>
+              <li>7 Passengers</li>
+              <li>3 Big Luggage</li>
+              <li>4 Small Luggage</li>
+              <li>5 Door</li>
+              <li>Automatic Transmission</li>
+            </ul>
+            Rent:
+            <ul>
+              <li>&#x20b9; 2200/8 hrs or 80 kms</li>
+              <li>&#x20b9; 5500/day</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/benz.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Premium</h5>
+            <p class="card-text">Mercedes E-class or Similar </br>
+            <ul>
+              <li>4 Passengers</li>
+              <li>2 Big Luggage</li>
+              <li>2 Small Luggage</li>
+              <li>4 Door</li>
+              <li>Automatic Transmission</li>
+            </ul>
+            Rent:
+            <ul>
+              <li>&#x20b9; 2500/ 8 hrs or 80 kms</li>
+              <li>&#x20b9; 6500/day</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>*All rents given above are for <strong>Self Driving</strong>. If Driver is needed, extra charges will be
+      charged.</br>
+      *If Self Driving is chosen, then Driving License is to be presented and Xerox of it must be submitted before
+      starting Drive.
+    </p>
+  </div>
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Booking form</h2>
+      <p class="lead">Fill the form and book your transport service.</p>
+    </div>
+    <div class="col-md-12 order-md-1">
+      <h4 class="mb-3">Personal Details</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for updates.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+          <div class="invalid-feedback">
+            Please enter your address.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="address">Room No.</label>
+            <input type="text" class="form-control" id="room-no" placeholder="101" required="">
+            <div class="invalid-feedback">
+              Please enter your Room No.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="type">Vehicle type</label>
+            <select class="custom-select d-block w-100" id="type" required="">
+              <option value="">Choose...</option>
+              <option>Standard</option>
+              <option>Economy</option>
+              <option>SUV</option>
+              <option>Premium</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid Vehicle Type.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="driver">Is Driver Needed?</label>
+            <select class="custom-select d-block w-100" id="driver" required="">
+              <option value="">Choose...</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid Answer.
+            </div>
+          </div>
+        </div>
+
+        <hr class="mb-4">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="start-date">Start Date</label>
+            <input type="date" class="form-control" id="start-date" placeholder="" required="">
+            <div class="invalid-feedback">
+              Please enter valid Start Date.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="start-date">Start Time</label>
+            <input type="time" class="form-control" id="start-date" placeholder="" required="">
+            <div class="invalid-feedback">
+              Please enter valid Start Date.
+            </div>
+          </div>
+          <div class="row">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="start-date">End Date</label>
+            <input type="date" class="form-control" id="start-date" placeholder="" required="">
+            <div class="invalid-feedback">
+              Please enter valid End Date.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="start-date">End Time</label>
+            <input type="time" class="form-control" id="start-date" placeholder="" required="">
+            <div class="invalid-feedback">
+              Please enter valid End Time.
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button onclick="" class="btn btn-success btn-lg submit" type="submit">Book</button>
+        </div>
+    </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top<ion-icon name="arrow-up-outline"></ion-icon></a>
+    </p>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <div class="container">
+        <ul class="list-inline">
+          <li class="list-inline-item align-center"><a href="about.html">About</a></li>
+          <li class="list-inline-item align-center"><a href="#">Terms</a></li>
+          <li class="list-inline-item align-center"><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="mb-1">© 2020 The Avenue</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
