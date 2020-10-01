@@ -51,13 +51,13 @@
                     <a class="nav-link" href="gallery.html">GALLERY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                    <a class="nav-link" href="about.html">ABOUT US</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">LOGIN</a>
+                    <a class="nav-link" href="login.php">LOGIN</a>
                 </li>
                 <li>
-                    <a href="signup.html" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign
+                    <a href="signup.php" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign
                         Up</a>
                 </li>
             </ul>
@@ -121,7 +121,7 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <img src="images/suite4.jpg" class="card-img-top" height="320px" alt="...">
+                        <img src="images/suite4.jpg" class="card-img-top" width="100%" height="100%" alt="...">
                         <h5 class="card-title">AVENUE EXECUTIVE SUITE</h5>
                         <p class="card-text">Indulge in a regal 630 sq. ft suite with king bed and living area. Replete
                             with fruit platter,
@@ -148,11 +148,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#executive-suite">Check
+                        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#executive">Check
                             Availability</button>
-                        <div class="modal fade" id="executive-suite" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="executive" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
@@ -160,33 +160,58 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="start-date">Check-In Date</label>
-                                                <input type="date" class="form-control" id="start-date" placeholder=""
-                                                    required="">
-                                                <div class="invalid-feedback">
-                                                    Please enter valid Check-In Date.
+                                    <div class="modal-body mx-auto">
+                                        <form class="needs-validation" novalidate="">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="ci-exe">Checkin Date</label>
+                                                    <input type="date" class="form-control" id="ci-exe" placeholder=""
+                                                        required="">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid Date.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="co-exe">Checkout Date</label>
+                                                    <input type="date" class="form-control" id="co-exe" placeholder=""
+                                                        required="">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid Date.
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="start-date">Check-Out Date</label>
-                                                <input type="date" class="form-control" id="start-date" placeholder=""
-                                                    required="">
-                                                <div class="invalid-feedback">
-                                                    Please enter valid Check-Out Date.
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="adults">Adults</label>
+                                                    <input type="number" class="form-control" id="adults"
+                                                        placeholder="1" required="" min="1" max="3">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="child">Child</label>
+                                                    <input type="number" class="form-control" id="child" placeholder="1"
+                                                        required="" min="0" max="2">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="rooms">Rooms</label>
+                                                    <input type="number" class="form-control" id="rooms" placeholder="1"
+                                                        required="" min="1" max="2">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-success">Book Now</button>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success">Check</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -197,7 +222,7 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <img src="images/suite5.jpg" class="card-img-top" height="320px" alt="...">
+                        <img src="images/suite5.jpg" class="card-img-top" width="100%" height="100%" alt="...">
                         <h5 class="card-title">AVENUE GARDEN SUITE</h5>
                         <p class="card-text">This 530-600 sq ft suite, offers private garden giving the privacy you
                             desire.
@@ -225,11 +250,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#garden-suite">Check
+                        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#garden">Check
                             Availability</button>
-                        <div class="modal fade" id="garden-suite" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="garden" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
@@ -237,32 +262,58 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="start-date">Check-In Date</label>
-                                                <input type="date" class="form-control" id="start-date" placeholder=""
-                                                    required="">
-                                                <div class="invalid-feedback">
-                                                    Please enter valid Check-In Date.
+                                    <div class="modal-body mx-auto">
+                                        <form class="needs-validation" novalidate="">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="ci-garden">Checkin Date</label>
+                                                    <input type="date" class="form-control" id="ci-garden"
+                                                        placeholder="" required="">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid Date.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="co-garden">Checkout Date</label>
+                                                    <input type="date" class="form-control" id="co-garden"
+                                                        placeholder="" required="">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid Date.
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="start-date">Check-Out Date</label>
-                                                <input type="date" class="form-control" id="start-date" placeholder=""
-                                                    required="">
-                                                <div class="invalid-feedback">
-                                                    Please enter valid Check-Out Date.
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="adults">Adults</label>
+                                                    <input type="number" class="form-control" id="adults"
+                                                        placeholder="1" required="" min="1" max="3">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="child">Child</label>
+                                                    <input type="number" class="form-control" id="child" placeholder="1"
+                                                        required="" min="0" max="2">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="rooms">Rooms</label>
+                                                    <input type="number" class="form-control" id="rooms" placeholder="1"
+                                                        required="" min="1" max="2">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-success">Book Now</button>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success">Check</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +324,7 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <img src="images/suite1.jpg" class="card-img-top" height="320px" alt="...">
+                        <img src="images/suite1.jpg" class="card-img-top" width="100%" height="100%" alt="...">
                         <h5 class="card-title">AVENUE HEAVEN SUITE</h5>
                         <p class="card-text">Enjoy the ambience of Hyatt Suite offering 600 – 700 sq. ft king size room
                             with world class features. Contemporary design, separate living & bedroom with hi-speed
@@ -302,11 +353,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#heaven-suite">Check
+                        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#heaven">Check
                             Availability</button>
-                        <div class="modal fade" id="heaven-suite" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="heaven" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
@@ -314,32 +365,58 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="start-date">Check-In Date</label>
-                                                <input type="date" class="form-control" id="start-date" placeholder=""
-                                                    required="">
-                                                <div class="invalid-feedback">
-                                                    Please enter valid Check-In Date.
+                                    <div class="modal-body mx-auto">
+                                        <form class="needs-validation" novalidate="">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="ci-heaven">Checkin Date</label>
+                                                    <input type="date" class="form-control" id="ci-heaven"
+                                                        placeholder="" required="">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid Date.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="co-heaven">Checkout Date</label>
+                                                    <input type="date" class="form-control" id="co-heaven"
+                                                        placeholder="" required="">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid Date.
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="start-date">Check-Out Date</label>
-                                                <input type="date" class="form-control" id="start-date" placeholder=""
-                                                    required="">
-                                                <div class="invalid-feedback">
-                                                    Please enter valid Check-Out Date.
+                                            <div class="row">
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="adults">Adults</label>
+                                                    <input type="number" class="form-control" id="adults"
+                                                        placeholder="1" required="" min="1" max="3">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="child">Child</label>
+                                                    <input type="number" class="form-control" id="child" placeholder="1"
+                                                        required="" min="0" max="2">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="rooms">Rooms</label>
+                                                    <input type="number" class="form-control" id="rooms" placeholder="1"
+                                                        required="" min="1" max="2">
+                                                    <div class="invalid-feedback">
+                                                        Please enter valid number.
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-success">Book Now</button>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success">Check</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -357,7 +434,6 @@
             <div class="container">
                 <ul class="list-inline">
                     <li class="list-inline-item align-center"><a href="about.html">About</a></li>
-                    <li class="list-inline-item align-center"><a href="contact.html">Contact</a></li>
                 </ul>
                 <p class="mb-1">© 2020 The Avenue</p>
             </div>

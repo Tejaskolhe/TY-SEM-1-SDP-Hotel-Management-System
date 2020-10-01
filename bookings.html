@@ -51,13 +51,13 @@
           <a class="nav-link" href="gallery.html">GALLERY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">CONTACT US</a>
+          <a class="nav-link" href="about.html">ABOUT US</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.html">LOGIN</a>
+          <a class="nav-link" href="login.php">LOGIN</a>
         </li>
         <li>
-          <a href="signup.html" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign Up</a>
+          <a href="signup.php" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign Up</a>
         </li>
       </ul>
 
@@ -119,7 +119,7 @@
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-            <img src="images/bed1.jpg" class="card-img-top" height="320px" alt="...">
+            <img src="images/bed1.jpg" class="card-img-top" width="100%" alt="...">
             <h5 class="card-title">AVENUE DELUXE KING</h5>
             <p class="card-text">Gaze out floor-to-ceiling windows in this 25-square-meter room with one king bed and
               featuring a spacious work desk
@@ -149,7 +149,7 @@
               Availability</button>
             <div class="modal fade" id="deluxe-king" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
@@ -157,30 +157,55 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Starting Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
+                  <div class="modal-body mx-auto">
+                    <form class="needs-validation" novalidate="">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <label for="ci-deluxe-king">Checkin Date</label>
+                          <input type="date" class="form-control" id="ci-deluxe-king" placeholder="" required="">
+                          <div class="invalid-feedback">
+                            Please enter valid Date.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="co-deluxe-king">Checkout Date</label>
+                          <input type="date" class="form-control" id="co-deluxe-king" placeholder="" required="">
+                          <div class="invalid-feedback">
+                            Please enter valid Date.
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Last Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
+                      <div class="row">
+                        <div class="col-md-3 mb-3">
+                          <label for="adults">Adults</label>
+                          <input type="number" class="form-control" id="adults" placeholder="1" required="" min="1"
+                            max="3">
+                          <div class="invalid-feedback">
+                            Please enter valid number.
+                          </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <label for="child">Child</label>
+                          <input type="number" class="form-control" id="child" placeholder="1" required="" min="0"
+                            max="2">
+                          <div class="invalid-feedback">
+                            Please enter valid number.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="rooms">Rooms</label>
+                          <input type="number" class="form-control" id="rooms" placeholder="1" required="" min="1"
+                            max="2">
+                          <div class="invalid-feedback">
+                            Please enter valid number.
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Book Now</button>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Check</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -191,7 +216,7 @@
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-            <img src="images/bed3.jpg" class="card-img-top" height="320px" alt="...">
+            <img src="images/bed3.jpg" class="card-img-top" width="100%" alt="...">
             <h5 class="card-title">AVENUE KING DOUBLE</h5>
             <p class="card-text">Unwind in the cozy 270 sq.ft room with
               king bed and contemporary design. Experience a sense of luxury with a walk-wardrobe, while wired and
@@ -220,7 +245,7 @@
               Availability</button>
             <div class="modal fade" id="king-double" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
@@ -228,30 +253,55 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Starting Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
+                  <div class="modal-body mx-auto">
+                    <form class="needs-validation" novalidate="">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <label for="ci-king-double">Checkin Date</label>
+                          <input type="date" class="form-control" id="ci-king-double" placeholder="" required="">
+                          <div class="invalid-feedback">
+                            Please enter valid Date.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="co-king-double">Checkout Date</label>
+                          <input type="date" class="form-control" id="co-king-double" placeholder="" required="">
+                          <div class="invalid-feedback">
+                            Please enter valid Date.
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Last Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
+                      <div class="row">
+                        <div class="col-md-3 mb-3">
+                          <label for="adults">Adults</label>
+                          <input type="number" class="form-control" id="adults" placeholder="1" required="" min="1"
+                            max="3">
+                          <div class="invalid-feedback">
+                            Please enter valid number.
+                          </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <label for="child">Child</label>
+                          <input type="number" class="form-control" id="child" placeholder="1" required="" min="0"
+                            max="2">
+                          <div class="invalid-feedback">
+                            Please enter valid number.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="rooms">Rooms</label>
+                          <input type="number" class="form-control" id="rooms" placeholder="1" required="" min="1"
+                            max="2">
+                          <div class="invalid-feedback">
+                            Please enter valid number.
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Book Now</button>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Check</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -259,73 +309,291 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <img src="images/bed2.jpg" class="card-img-top" height="320px" alt="...">
-            <h5 class="card-title">AVENUE KING SINGLE</h5>
-            <p class="card-text">Unwind in the cozy 270 sq. ft room with two twin beds and contemporary design.
-              Experience a sense of luxury with a
-              walk-in shower, while wired and wireless Internet keep visitors connected.
-            </p>
-            <div class="dropdown">
-              <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Amenities
-              </a>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/bed2.jpg" class="card-img-top" width="100%" alt="...">
+              <h5 class="card-title">AVENUE KING SINGLE</h5>
+              <p class="card-text">Unwind in the cozy 270 sq. ft room with two twin beds and contemporary design.
+                Experience a sense of luxury with a
+                walk-in shower, while wired and wireless Internet keep visitors connected.
+              </p>
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Amenities
+                </a>
 
-              <div class="dropdown-menu">
-                <ul class="amenities">
-                  <li>40 inch TV</li>
-                  <li>Individual AC control</li>
-                  <li>Work Desk</li>
-                  <li>Iron and Wardrobe</li>
-                  <li>Hair Dryer</li>
-                  <li>Robes & Slippers</li>
-                  <li>Coffeemaker</li>
-                  <li>In-room safe</li>
-                  <li>Morning newspaper</li>
-                </ul>
+                <div class="dropdown-menu">
+                  <ul class="amenities">
+                    <li>40 inch TV</li>
+                    <li>Individual AC control</li>
+                    <li>Work Desk</li>
+                    <li>Iron and Wardrobe</li>
+                    <li>Hair Dryer</li>
+                    <li>Robes & Slippers</li>
+                    <li>Coffeemaker</li>
+                    <li>In-room safe</li>
+                    <li>Morning newspaper</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="btn btn-outline-primary" data-toggle="modal" data-target="#king-single">Check
+                Availability</button>
+              <div class="modal fade" id="king-single" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body mx-auto">
+                      <form class="needs-validation" novalidate="">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="ci-king-single">Checkin Date</label>
+                            <input type="date" class="form-control" id="ci-king-single" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Please enter valid Date.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="co-king-single">Checkout Date</label>
+                            <input type="date" class="form-control" id="co-king-single" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Please enter valid Date.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 mb-3">
+                            <label for="adults">Adults</label>
+                            <input type="number" class="form-control" id="adults" placeholder="1" required="" min="1"
+                              max="3">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="child">Child</label>
+                            <input type="number" class="form-control" id="child" placeholder="1" required="" min="0"
+                              max="2">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="rooms">Rooms</label>
+                            <input type="number" class="form-control" id="rooms" placeholder="1" required="" min="1"
+                              max="2">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Check</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#king-single">Check
-              Availability</button>
-            <div class="modal fade" id="king-single" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Starting Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Last Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
-                        </div>
-                      </div>
-                    </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/bed4.jpg" class="card-img-top" width="100%" alt="...">
+              <h5 class="card-title">AVENUE DELUXE TWIN</h5>
+              <p class="card-text">Gaze out floor-to-ceiling windows in this 25-square-meter room with one king bed and
+                featuring a spacious work desk
+                and modern bath with magnified makeup mirror.</p>
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Amenities
+                </a>
 
+                <div class="dropdown-menu">
+                  <ul class="amenities">
+                    <li>40 inch TV</li>
+                    <li>Individual AC control</li>
+                    <li>Work Desk</li>
+                    <li>Iron and Wardrobe</li>
+                    <li>Hair Dryer</li>
+                    <li>Robes & Slippers</li>
+                    <li>Coffeemaker</li>
+                    <li>In-room safe</li>
+                    <li>Morning newspaper</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="btn btn-outline-primary" data-toggle="modal" data-target="#deluxe-twin">Check
+                Availability</button>
+              <div class="modal fade" id="deluxe-twin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body mx-auto">
+                      <form class="needs-validation" novalidate="">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="ci-deluxe-twin">Checkin Date</label>
+                            <input type="date" class="form-control" id="ci-deluxe-twin" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Please enter valid Date.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="co-deluxe-twin">Checkout Date</label>
+                            <input type="date" class="form-control" id="co-deluxe-twin" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Please enter valid Date.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 mb-3">
+                            <label for="adults">Adults</label>
+                            <input type="number" class="form-control" id="adults" placeholder="1" required="" min="1"
+                              max="3">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="child">Child</label>
+                            <input type="number" class="form-control" id="child" placeholder="1" required="" min="0"
+                              max="2">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="rooms">Rooms</label>
+                            <input type="number" class="form-control" id="rooms" placeholder="1" required="" min="1"
+                              max="2">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Check</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/bed5.jpg" class="card-img-top" width="100%" alt="...">
+              <h5 class="card-title">AVENUE POOL VIEW TWIN</h5>
+              <p class="card-text">Contemporary design, modern art highlights this 270-sq.ft. room with a twin bed &
+                large
+                bay windows, granting pristine
+                views of the pool. The room is well equipped with a work space & hi-tech amenities.</p>
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Amenities
+                </a>
+
+                <div class="dropdown-menu">
+                  <ul class="amenities">
+                    <li>40 inch TV</li>
+                    <li>Individual AC control</li>
+                    <li>Separate sitting area</li>
+                    <li>Iron and Wardrobe</li>
+                    <li>Hair Dryer</li>
+                    <li>Robes & Slippers</li>
+                    <li>Coffeemaker</li>
+                    <li>In-room safe</li>
+                    <li>Morning newspaper</li>
+                  </ul>
+                </div>
+              </div>
+              <button class="btn btn-outline-primary" data-toggle="modal" data-target="#pool-twin">Check
+                Availability</button>
+              <div class="modal fade" id="pool-twin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body mx-auto">
+                      <form class="needs-validation" novalidate="">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="ci-pool-twin">Checkin Date</label>
+                            <input type="date" class="form-control" id="ci-pool-twin" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Please enter valid Date.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="co-pool-twin">Checkout Date</label>
+                            <input type="date" class="form-control" id="co-pool-twin" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Please enter valid Date.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 mb-3">
+                            <label for="adults">Adults</label>
+                            <input type="number" class="form-control" id="adults" placeholder="1" required="" min="1"
+                              max="3">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="child">Child</label>
+                            <input type="number" class="form-control" id="child" placeholder="1" required="" min="0"
+                              max="2">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="rooms">Rooms</label>
+                            <input type="number" class="form-control" id="rooms" placeholder="1" required="" min="1"
+                              max="2">
+                            <div class="invalid-feedback">
+                              Please enter valid number.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Check</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -333,163 +601,19 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <img src="images/bed4.jpg" class="card-img-top" height="320px" alt="...">
-            <h5 class="card-title">AVENUE DELUXE TWIN</h5>
-            <p class="card-text">Gaze out floor-to-ceiling windows in this 25-square-meter room with one king bed and
-              featuring a spacious work desk
-              and modern bath with magnified makeup mirror.</p>
-            <div class="dropdown">
-              <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Amenities
-              </a>
-
-              <div class="dropdown-menu">
-                <ul class="amenities">
-                  <li>40 inch TV</li>
-                  <li>Individual AC control</li>
-                  <li>Work Desk</li>
-                  <li>Iron and Wardrobe</li>
-                  <li>Hair Dryer</li>
-                  <li>Robes & Slippers</li>
-                  <li>Coffeemaker</li>
-                  <li>In-room safe</li>
-                  <li>Morning newspaper</li>
-                </ul>
-              </div>
-            </div>
-            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#deluxe-twin">Check
-              Availability</button>
-            <div class="modal fade" id="deluxe-twin" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Starting Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Last Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Book Now</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <img src="images/bed5.jpg" class="card-img-top" height="320px" alt="...">
-            <h5 class="card-title">AVENUE POOL VIEW TWIN</h5>
-            <p class="card-text">Contemporary design, modern art highlights this 270-sq.ft. room with a twin bed & large
-              bay windows, granting pristine
-              views of the pool. The room is well equipped with a work space & hi-tech amenities.</p>
-            <div class="dropdown">
-              <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Amenities
-              </a>
-
-              <div class="dropdown-menu">
-                <ul class="amenities">
-                  <li>40 inch TV</li>
-                  <li>Individual AC control</li>
-                  <li>Separate sitting area</li>
-                  <li>Iron and Wardrobe</li>
-                  <li>Hair Dryer</li>
-                  <li>Robes & Slippers</li>
-                  <li>Coffeemaker</li>
-                  <li>In-room safe</li>
-                  <li>Morning newspaper</li>
-                </ul>
-              </div>
-            </div>
-            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#pool-twin">Check
-              Availability</button>
-            <div class="modal fade" id="pool-twin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Check Availability</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Starting Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-md-6 mb-3">
-                        <label for="start-date">Last Date</label>
-                        <input type="date" class="form-control" id="start-date" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Please enter valid Date.
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Book Now</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top<ion-icon name="arrow-up-outline"></ion-icon></a>
-    </p>
-    <footer class="my-5 pt-5 text-muted text-center text-small">
       <div class="container">
-        <ul class="list-inline">
-          <li class="list-inline-item align-center"><a href="about.html">About</a></li>
-          <li class="list-inline-item align-center"><a href="contact.html">Contact</a></li>
-        </ul>
-        <p class="mb-1">© 2020 The Avenue</p>
+        <p class="float-right">
+          <a href="#">Back to top<ion-icon name="arrow-up-outline"></ion-icon></a>
+        </p>
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <div class="container">
+            <ul class="list-inline">
+              <li class="list-inline-item align-center"><a href="about.html">About</a></li>
+            </ul>
+            <p class="mb-1">© 2020 The Avenue</p>
+          </div>
+        </footer>
       </div>
-    </footer>
-  </div>
 </body>
 
 </html>

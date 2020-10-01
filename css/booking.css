@@ -12,12 +12,13 @@
 .lead {
     text-align: justify;
 }
-.mid {
-    color: #000000;
-}
 
 div h3 {
     margin-bottom: 20px;
+}
+
+.mid {
+    color: #000000;
 }
 
 .vl {
@@ -33,12 +34,16 @@ img.logo {
 
 }
 .card-title {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 .card {
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .amenities{
     width: 250px;
+}
+.modal-body {
+    width: 100%;
 }

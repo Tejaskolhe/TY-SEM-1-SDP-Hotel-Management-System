@@ -16,6 +16,11 @@ hr.solid {
     margin-right: 30px;
     
 }
+
+.align-items-center {
+    margin-bottom: 40px;
+}
+
 h2.seperator{
     text-align: center;
     margin: 10px;

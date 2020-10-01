@@ -50,31 +50,66 @@
                     <a class="nav-link" href="about.html">ABOUT US</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="login.html">LOGIN</a>
+                    <a class="nav-link" href="login.php">LOGIN</a>
                 </li>
                 <li>
-                    <a href="signup.html" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign
+                    <a href="signup.php" class="btn btn-success btn-md active" role="button" aria-pressed="true">Sign
                         Up</a>
                 </li>
             </ul>
-
+            
     </nav>
+    <?php      
+    require "connection.php";
+    if(isset($_POST['submit'])) {
+        $username = mysqli_real_escape_string($link, trim($_POST['user']));  
+        $password = mysqli_real_escape_string($link, trim($_POST['password']));  
+      
+        //to prevent from mysqli injection  
+        $username = stripcslashes($username);  
+        $password = stripcslashes($password);  
+
+        $sql = "SELECT * FROM login WHERE username='$username' AND password='$password'";  
+        $result = mysqli_query($link, $sql);  
+        // $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        $count = mysqli_num_rows($result);  
+          
+        if($count==1){  
+            echo "<div class='container'><div class='alert alert-success alert-dismissible fade show' role='alert'>
+            <strong>LOGIN SUCCESSFULL</strong>
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div></div>"; 
+        }  
+        else{  
+            echo "<div class='container'><div class='alert alert-danger alert-dismissible fade show' role='alert'>
+            <strong>LOGIN FAILED</strong>
+            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div></div>";  
+        } 
+    }    
+?>  
     <div class="container">
-        <img class="mb-4" src="images/logo.jpg" alt="" width="15%" height="15%">
+        <img class="mb-4" src="images/logo.jpg" alt="logo" width="150px">
     </div>
     <div class="container">
-        <form class="form-signin" name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">
+        <form class="form-signin" name="f1" action = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
             <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
             <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+            <input type="email" id="inputEmail" name="user" class="form-control" placeholder="Email address" required=""
                 autofocus="">
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required="">
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Sign in</button>
             <a href="signup.html"><u>Create account</u></a>
         </form>
     </div>
+
+
 
     <div class="container">
         <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -87,83 +122,7 @@
         </footer>
     </div>
 
-    <?php      
-    $host = "localhost";  
-    $user = "root";  
-    $password = '';  
-    $db_name = "javatpoint";  
-      
-    $con = mysqli_connect($host, $user, $password, $db_name);  
-    if(mysqli_connect_errno()) {  
-        die("Failed to connect with MySQL: ". mysqli_connect_error());  
-    }  
-?>  
+   
 </body>
 
 </html>
-
-
-<!-- <form>
-<p>USERNAME / ID</p>
-<input type="text" id="username" value="G" name="username" placeholder="enter your username">
-<p>PASSWORD</p>
-<input type="password" name="" placeholder="enter your password" id="password">
-<input type="submit" name="" value="LOGIN" onclick="login()">
-
-<br>
-<a href="forget.html">forgot password</a>
-<br>
-<a href="new.html">create a new account</a>
-
-<script>
-function login()
-{
-var a=document.getElementById('username').value
-var b=document.getElementById('password').value
-if(a==""||b=="")
-{
-alert("!!! please fill the details !!!");
-}
-else 
-if(a=="SAVENUE" && b=="12345")
-{
-window.open("manager.html");
-}
-else
-if(a=="GAVENUE" && b=="12345")
-{
-window.open("gservice.html");
-}
-else
-if(a=="RJGA" && b=="12345")
-{
-window.open("manager.html");
-}
-else
-if(a=="ABVE" && b=="12345")
-{
-window.open("manager.html");
-}
-else
-if(a=="ABZR" && b=="12345")
-{
-window.open("manager.html");
-}
-else
-if(a=="AMNM" && b=="12345")
-{
-window.open("manager.html");
-}
-else
-if(a=="YASW" && b=="12345")
-{
-window.open("manager.html");
-}
-else
-{
-alert("wrong id/password");
-}
-
-}
-</script>
-</body> --> -->

@@ -52,17 +52,71 @@
                               <a class="nav-link" href="about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                              <a class="nav-link" href="login.html">LOGIN</a>
+                              <a class="nav-link" href="login.php">LOGIN</a>
                         </li>
-
                   </ul>
-
       </nav>
+      
+      <?php
+
+require "connection.php";
+$errors = array();
+if(isset($_POST['submit'])) {
+    $fname = mysqli_real_escape_string($link, trim($_POST['fname']));
+    $lname = mysqli_real_escape_string($link, trim($_POST['lname']));
+    $username = mysqli_real_escape_string($link, trim($_POST['user']));  
+    $password = mysqli_real_escape_string($link, trim($_POST['password']));  
+    $cpassword = mysqli_real_escape_string($link, trim($_POST['cpassword']));
+
+     //to prevent from mysqli injection  
+    $fname = stripcslashes($fname);
+    $lname = stripcslashes($lname);
+    $username = stripcslashes($username);  
+    $password = stripcslashes($password);  
+    $cpassword = stripcslashes($cpassword);
+
+    //To check if password and confirm password match
+    if ($password !== $cpassword) {
+        die('Password and Confirm password should match!');   
+     }
+    
+    // first check the database to make sure 
+    // a user does not already exist with the same user email
+     $user_check_query = "SELECT * FROM login WHERE username='$username' LIMIT 1";
+     $result = mysqli_query($link, $user_check_query);
+     $user = mysqli_fetch_assoc($result);
+     
+    if ($user) { // if user exists
+       if ($user['username'] === $username) {
+         array_push($errors, "E-mail already exists");
+         echo "<div class='container'><div class='alert alert-danger alert-dismissible fade show' role='alert'>
+         <strong>E-mail</strong> already exists! Try other E-mail.
+         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+           <span aria-hidden='true'>&times;</span>
+         </button>
+       </div></div>";
+       }
+    }
+
+    if (count($errors) == 0) {
+        
+        $query = "INSERT INTO login (first_name,last_name,username,password) 
+                  VALUES('$fname','$lname','$username','$password')";
+        if(mysqli_query($link, $query));
+        echo "<div class='container'><div class='alert alert-success alert-dismissible fade show' role='alert'>
+        <strong>Account Created</strong>
+        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div></div>";
+    }
+  }
+?>
       <div class="container">
             <img class="mb-4" src="images/logo.jpg" alt="" width="15%" height="15%">
       </div>
       <div class="container">
-            <form class="form-signup" action = "signup.php" method = "POST">
+            <form class="form-signup" action = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
                   <h1 class="h3 mb-3 font-weight-normal heading">Create Account</h1>
                   <div class="row">
                         <div class="col-md-6 mb-3">
